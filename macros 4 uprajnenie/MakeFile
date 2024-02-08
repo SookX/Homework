@@ -1,0 +1,8 @@
+help.out: help.c
+	gcc help.c -o help.out
+	./help.out
+
+mystrings.o: mystrings.h mystrings.c
+	gcc -c mystrings.c -o mystrings.o
+clean:
+	rm -f *.o .out
